@@ -96,7 +96,7 @@ def GenerateDocx(Header_imgpath="D:\AI Automation\AI-Automation\data\KTB-Logo.jp
     content3.style.font.bold=False
     content3.style.font.size=Pt(12)
 
-def RetriveData(connection_string='Driver={ODBC Driver 18 for SQL Server};Server=tcp:cbdctest.database.windows.net,1433;Database=Transactions;Uid=CloudSA4ab3329e;Pwd=$sremmaH123456;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;',
+def RetriveData(connection_string='Driver={ODBC Driver 18 for SQL Server};Server=tcp:cbdctest.database.windows.net,1433;Database=Transactions;Uid=CloudSA4ab3329e;Pwd=;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;',
                 query='SELECT TOP 5 * FROM Transactions.Events'):
     conn = pyodbc.connect(connection_string)
     cursor = conn.cursor()
